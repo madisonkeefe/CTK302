@@ -5,15 +5,15 @@
 // Can you fix it?
 
 
-function Setup() {
-  makeCanvas(400, 400);
+function setup() {
+  createCanvas(400, 400);
 }
 
-function Draw() {
+function draw() {
 
   //background(100);
 
-  rect();
+
   // the background color
   if (mouseIsPressed) {
     background('red');
@@ -22,13 +22,13 @@ function Draw() {
   }
 
   // this ellipse should be 200x200 pixels in the center of the screen
-  ellipse(width / 2, height / 2, CENTER, CENTER);
+  ellipse(width / 2, height / 2, 200, 200);
 
   // the mouth - smile if pressed, frown otherwise
   if (mouseIsPressed) {
     arc(200, 210, 130, 100, 0, PI); // smile - (this line is correct)
   } else {
-    arc(0, 270, 130, 100, PI, 0); // frown
+    arc(200, 270, 130, 100, PI, 0); // frown
 
   }
 
@@ -37,14 +37,13 @@ function Draw() {
   ellipse(230, 180, 40, 40);
 
 
-  background('white');
 
-  if (mouseReleased) {
+  if (mouseIsPressed) {
     print("for debugging");
   }
 
-rect();
-  text("mouseX" + "mouseY", 10, 10); // print mouse locations to canvas
-  text("smile", 20, 20);
+
+  text(mouseX + "," + mouseY, 10, 10); // print mouse locations to canvas
+
 
 }
