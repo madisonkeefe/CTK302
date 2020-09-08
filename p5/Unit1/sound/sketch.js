@@ -22,6 +22,6 @@ function mouseReleased() {
   if (song1.isPlaying()) {
     song1.pause();
   } else {
-    song1.loop();
+    song1.play();
   }
 }
