@@ -1,10 +1,13 @@
 function setup() {
   createCanvas(800, 800);
+  
 }
 
 function draw() {
   background('grey');
-  ellipse(384, 697, 100, 100);
+  fill('white');
+  arc(520, 241, 250, 500, 0, PI);
+  ellipse(400, 200, 250,200);
 
 
 
