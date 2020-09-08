@@ -24,7 +24,9 @@ function mouseReleased() {
   } else {
     song1.play();
   }
-  function touchStarted() {
-  getAudioContext().resume();
+
 }
+
+function touchStarted() {
+  getAudioContext().resume();
 }
