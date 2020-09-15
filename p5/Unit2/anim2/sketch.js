@@ -9,6 +9,7 @@ function draw() {
 
   push();
   translate(x, 0);
+  scale(1);
   //rect(0, 250, 50, 50);
 avatar();
   x = x + 4;
