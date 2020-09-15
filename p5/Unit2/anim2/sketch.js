@@ -1,13 +1,29 @@
-
+var x = 0 ;
 
 function setup() {
-  createCanvas(800, 800);
-  frameRate(10);
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(100);
+
+  push();
+  translate(x, 0);
+  //rect(0, 250, 50, 50);
+avatar();
+  x = x + 4;
+  if (x > width) {
+    x = -300;
+  }
+  pop();
+
+
 
 }
 
 
-function draw() {
+function avatar() {
+
   background(220);
   noStroke();
   fill('#a9a9a9');
@@ -134,7 +150,6 @@ function draw() {
 
 
   }
-  noStroke();
-  fill('black');
-  text(mouseX + "," + mouseY, 20, 20);
+
+
 }
