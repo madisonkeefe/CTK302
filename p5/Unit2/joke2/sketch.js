@@ -13,7 +13,7 @@ function setup() {
 
       case 0:
         background('green');
-        text("What kind of shoes do frogs wear?", 250, 250, 450, 400);
+        text("What kind of shoes do frogs wear?", 250, 250);
         timer = timer + 1;
         if (timer > 5 * 60) {
           state = 1;
