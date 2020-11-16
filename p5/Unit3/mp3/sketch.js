@@ -7,7 +7,7 @@ let frogPos;
 let state = 0;
 let timer = 0;
 var img, img2, img3, img4;
-
+//
 function setup() {
   createCanvas(600, 600);
   frogPos = createVector(width / 2, height - 80);
@@ -141,7 +141,7 @@ class Car {
   // constructor and attributes
   constructor() {
     this.pos = createVector(100, 100);
-    this.vel = createVector(random(-8, 8), random(-8, 8));
+    this.vel = createVector(random(-9, 9), random(-9, 9));
     this.size = random(40, 80);
     //this.c = color(random(150, 200), random(50), random(50));
     let b = floor(random(3));
